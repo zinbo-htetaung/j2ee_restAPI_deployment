@@ -10,7 +10,7 @@ public class DBConnection {
 		Class.forName("com.mysql.jdbc.Driver");
 
 		// Step 2: Define Connection URL
-		String connURL = "jdbc:mysql://localhost/cleaning_service?user=root&password=password&serverTimezone=UTC";
+		String connURL = "postgresql://neondb_owner:npg_Mgiv6EFbrO4P@ep-odd-thunder-a8vkdz9p-pooler.eastus2.azure.neon.tech/neondb?sslmode=require";
 
 		// Step 3: Establish connection to URL
 		Connection conn = DriverManager.getConnection(connURL);
