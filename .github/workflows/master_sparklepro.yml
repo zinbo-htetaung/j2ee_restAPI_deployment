@@ -27,6 +27,9 @@ jobs:
       - name: Build with Maven
         run: mvn -f sparkle_ws/pom.xml clean install
 
+      - name: List files after building
+        run: ls -R sparkle_ws/target  # Debug step to confirm JAR is created
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
