@@ -23,7 +23,10 @@ jobs:
         with:
           java-version: '17'
           distribution: 'microsoft'
-
+          
+      - name: Verify downloaded artifact before deploying
+        run: ls -R
+      
       - name: Build with Maven
         run: mvn -f sparkle_ws/pom.xml clean install
 
